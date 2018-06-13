@@ -8,7 +8,8 @@ RUN apt-get update -yqq && apt-get install -yqq rsync \
                                             git-all \
                                             zlib1g-dev \
                                             libbz2-dev \
-                                            libpng-dev
+                                            libpng-dev \
+                                            gnupg \
 
 RUN docker-php-ext-install json zip bz2
 RUN curl -sL https://deb.nodesource.com/setup_9.x | bash - && \
